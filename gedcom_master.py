@@ -176,7 +176,9 @@ def save_family_data(filename, individuals_id_and_name):
 
   return families
 
+writer = pd.ExcelWriter('out.xlsx')
 (individuals,individuals_id_and_name) = save_ind_data(filename)
-pd.DataFrame(individuals).to_csv("individual_data.csv")
 families = save_family_data(filename, individuals_id_and_name)
-pd.DataFrame(families).to_csv("family_data.csv")
+pd.DataFrame(individuals).to_excel(writer, sheet_name="Individuals")
+pd.DataFrame(families).to_excel(writer, sheet_name="Families")
+writer.save()
