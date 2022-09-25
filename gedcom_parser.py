@@ -6,6 +6,7 @@ from datetime import date
 individuals = []
 individuals_id_and_name = []
 families = []
+filename = 'INSERT FILENAME HERE'
 
 allowed_tags = {
     0 : ['INDI','FAM','HEAD','TRLR','NOTE'],
@@ -175,7 +176,7 @@ def save_family_data(filename, individuals_id_and_name):
 
   return families
 
-(individuals,individuals_id_and_name) = save_ind_data("/content/GedcomFamily-SharattramSeenivasan.ged")
-display(pd.DataFrame(individuals))
-families = save_family_data("/content/GedcomFamily-SharattramSeenivasan.ged", individuals_id_and_name)
-display(pd.DataFrame(families))
+(individuals,individuals_id_and_name) = save_ind_data(filename)
+pd.DataFrame(individuals).to_csv("individual_data.csv")
+families = save_family_data(filename, individuals_id_and_name)
+pd.DataFrame(families).to_csv("family_data.csv")
