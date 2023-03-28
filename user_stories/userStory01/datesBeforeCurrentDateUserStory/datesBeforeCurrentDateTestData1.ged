@@ -1,0 +1,54 @@
+0 HEAD
+1 SOUR Family Echo
+2 WWW http://www.familyecho.com/
+1 FILE Family 2
+1 DATE 30 SEP 2022
+1 DEST ANSTFILE
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 SUBM @I1@
+2 NAME sharatt2000@gmail.com
+1 SUBN
+1 CHAR UTF-8
+0 @I1@ INDI
+1 NAME Ronald /Brindley/
+2 GIVN Ronald
+2 SURN Brindley
+2 _MARNM Brindley
+1 SEX M
+1 BIRT
+2 DATE 9 APR 2023
+1 FAMC @F1@
+0 @I2@ INDI
+1 NAME Delores /Campbell/
+2 GIVN Delores
+2 SURN Campbell
+2 _MARNM Brindley
+1 SEX F
+1 BIRT
+2 DATE 22 JUN 1992
+1 FAMS @F1@
+0 @I3@ INDI
+1 NAME Chris /Brindley/
+2 GIVN Chris
+2 SURN Brindley
+2 _MARNM Brindley
+1 SEX M
+1 BIRT
+2 DATE 6 JUN 1990
+1 DEAT Y
+2 DATE 8 AUG 3000
+1 FAMS @F1@
+0 @F1@ FAM
+1 HUSB @I3@
+1 WIFE @I2@
+1 CHIL @I1@
+1 MARR
+2 DATE 9 AUG 2030
+2 PLAC Bristol
+1 DIV
+2 DATE 9 MAY 2024
+1 _CURRENT Y
+1 _PRIMARY Y
+0 TRLR

@@ -1,0 +1,4 @@
+Smelly codes:
+- Removed a lot of the bloat functions. The functions have no purpose as all I am doing is parsing the GEDCOM file and extracting the individuals and families dataframe, which is already done in our gedcom_master.py file. This will significantly reduce the file size and make it easier to read.
+- Removed the output_date function that outputted the dataframe to an excel. Originally the userstory parsed the GEDCOM file and then wrote to an excel, and then it reopened the excel and read from it. Instead I removed the writing/reading to the excel which removes a lot of the overhead.
+- Changed the way that I checked if two lists are the same in the function check_id, which meant I no longer needed to import Collections, thus removing more overhead.
